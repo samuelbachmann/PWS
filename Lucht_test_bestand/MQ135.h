@@ -1,0 +1,5 @@
+#define RLOAD 10.0
+#define RZERO 76.63
+
+#define PARA 116.6020682
+#define PARB 2.769034857
