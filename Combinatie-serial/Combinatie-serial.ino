@@ -24,39 +24,36 @@ const int ledPin = 13;
 const float TEMPERATURE = 21.0;
 const float HUMIDITY = 25.0;
 
-unsigned long previousMillis = 0;
-
 void setup() {
   Serial.begin(9600);
-  pinMode(ledPin, OUTPUT);
 
   if (!card.init(SPI_HALF_SPEED, chipSelect)) {
+    Serial.println("initialization failed!");
     digitalWrite(ledPin, HIGH);
     return;
   }
+  Serial.println("initialization done.");
 
-  if (SD.remove("data.txt")) {
-    Serial.println("Previous data file removed.");
-  }
+  SD.remove("data.txt");
 
   ss.begin(GPS_BAUD);
-  myFile = SD.open("data.txt", FILE_WRITE);
 }
 
 void loop() {
-  unsigned long currentMillis = millis();
 
-  if (currentMillis - previousMillis >= DELAY_INTERVAL) {
-    previousMillis = currentMillis;
+  digitalWrite(ledPin, HIGH);   
+  delay(1000);                  
+  digitalWrite(ledPin, LOW);    
+  delay(1000); 
 
-    digitalWrite(ledPin, HIGH);
-    delay(1000);
-    digitalWrite(ledPin, LOW);
-    delay(1000);
+  readMQ135();
+  readGPS();
+  delay(DELAY_INTERVAL); 
+}
 
-    readMQ135();
-    readGPS();;
-  }
+void readSensors() {
+  readMQ135();
+  readGPS();
 }
 
 void readMQ135() {
@@ -70,6 +67,8 @@ void readMQ135() {
 }
 
 void printMQ135Data(float rzero, float correctedRZero, float resistance, float ppm, float correctedPPM) {
+  myFile = SD.open("data.txt", FILE_WRITE);
+
   myFile.print("MQ135: RZero: ");
   myFile.print(rzero);
   myFile.print("  Corrected RZero: ");
@@ -81,6 +80,21 @@ void printMQ135Data(float rzero, float correctedRZero, float resistance, float p
   myFile.print("  Corrected PPM: ");
   myFile.print(correctedPPM);
   myFile.println(" ppm");
+
+  myFile.close();
+
+  Serial.print("MQ135: RZero: ");
+  Serial.print(rzero);
+  Serial.print("  Corrected RZero: ");
+  Serial.print(correctedRZero);
+  Serial.print("  Resistance: ");
+  Serial.print(resistance);
+  Serial.print("  PPM: ");
+  Serial.print(ppm);
+  Serial.print("  Corrected PPM: ");
+  Serial.print(correctedPPM);
+  Serial.println(" ppm");
+
 }
 
 void readGPS() {
@@ -92,12 +106,14 @@ void readGPS() {
   }
 
   if (millis() > GPS_WAIT_TIME && gps.charsProcessed() < GPS_PROCESS_THRESHOLD) {
-    myFile.println(F("No GPS detected: check wiring."));
+    Serial.println(F("No GPS detected: check wiring."));
     // Handle GPS absence without blocking
   }
 }
 
 void printGPSData() {
+  myFile = SD.open("data.txt", FILE_WRITE);
+
   myFile.print("GPS: Location: ");
   if (gps.location.isValid()) {
     myFile.print(gps.location.lat(), 6);
@@ -119,4 +135,28 @@ void printGPSData() {
   }
 
   myFile.println();
+
+  myFile.close();
+
+  Serial.print("GPS: Location: ");
+  if (gps.location.isValid()) {
+    Serial.print(gps.location.lat(), 6);
+    Serial.print(", ");
+    Serial.print(gps.location.lng(), 6);
+  } else {
+    Serial.print("INVALID");
+  }
+
+  Serial.print("  Date: ");
+  if (gps.date.isValid()) {
+    Serial.print(gps.date.month());
+    Serial.print("/");
+    Serial.print(gps.date.day());
+    Serial.print("/");
+    Serial.print(gps.date.year());
+  } else {
+    Serial.print("INVALID");
+  }
+
+  Serial.println();
 }
