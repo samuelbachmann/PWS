@@ -1,18 +1,180 @@
-MQ135: RZero: 154.58  Corrected RZero: 145.94  Resistance: 96.56  PPM: 61.47  Corrected PPM: 78.85 ppm
-GPS: Location: INVALID  Date: 0/0/2000
-MQ135: RZero: 144.46  Corrected RZero: 142.74  Resistance: 90.29  PPM: 78.59  Corrected PPM: 72.01 ppm
-GPS: Location: INVALID  Date: 0/0/2000
-MQ135: RZero: 116.87  Corrected RZero: 113.36  Resistance: 72.50  PPM: 132.51  Corrected PPM: 140.52 ppm
-GPS: Location: INVALID  Date: 0/0/2000
-MQ135: RZero: 109.67  Corrected RZero: 108.36  Resistance: 69.30  PPM: 157.84  Corrected PPM: 175.43 ppm
-GPS: Location: INVALID  Date: 0/0/2000
-MQ135: RZero: 112.66  Corrected RZero: 105.54  Resistance: 64.13  PPM: 165.68  Corrected PPM: 175.43 ppm
-GPS: Location: INVALID  Date: 0/0/2000
-MQ135: RZero: 106.82  Corrected RZero: 101.98  Resistance: 68.09  PPM: 165.68  Corrected PPM: 171.27 ppm
-GPS: Location: INVALID  Date: 0/0/2000
-MQ135: RZero: 126.18  Corrected RZero: 125.92  Resistance: 79.74  PPM: 104.45  Corrected PPM: 110.95 ppm
-GPS: Location: INVALID  Date: 0/0/2000
-MQ135: RZero: 116.87  Corrected RZero: 116.56  Resistance: 74.55  PPM: 129.15  Corrected PPM: 167.18 ppm
-GPS: Location: INVALID  Date: 0/0/2000
-MQ135: RZero: 127.44  Corrected RZero: 125.92  Resistance: 78.96  PPM: 98.85  Corrected PPM: 105.05 ppm
-GPS: Location: INVALID  Date: 0/0/2000
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 189.09  Corrected RZero: 194.83  Resistance: 116.30  PPM: 31.55  Corrected PPM: 33.90 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 186.53  Corrected RZero: 192.10  Resistance: 122.86  PPM: 32.80  Corrected PPM: 32.62 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 172.41  Corrected RZero: 181.84  Resistance: 113.25  PPM: 36.73  Corrected PPM: 40.86 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 174.63  Corrected RZero: 160.14  Resistance: 110.35  PPM: 52.22  Corrected PPM: 48.76 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 172.41  Corrected RZero: 168.22  Resistance: 108.95  PPM: 48.82  Corrected PPM: 45.49 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 181.60  Corrected RZero: 181.84  Resistance: 117.87  PPM: 38.11  Corrected PPM: 35.22 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 184.03  Corrected RZero: 184.31  Resistance: 111.79  PPM: 34.07  Corrected PPM: 37.97 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 181.60  Corrected RZero: 177.08  Resistance: 114.76  PPM: 40.98  Corrected PPM: 40.86 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 181.60  Corrected RZero: 184.31  Resistance: 113.25  PPM: 35.39  Corrected PPM: 39.40 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 179.22  Corrected RZero: 184.31  Resistance: 111.79  PPM: 35.39  Corrected PPM: 39.40 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 179.22  Corrected RZero: 174.79  Resistance: 113.25  PPM: 42.47  Corrected PPM: 40.86 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 172.41  Corrected RZero: 164.09  Resistance: 108.95  PPM: 48.82  Corrected PPM: 45.49 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 172.41  Corrected RZero: 158.23  Resistance: 107.59  PPM: 50.50  Corrected PPM: 47.11 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 181.60  Corrected RZero: 174.79  Resistance: 114.76  PPM: 45.57  Corrected PPM: 39.40 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 170.25  Corrected RZero: 174.79  Resistance: 107.59  PPM: 44.00  Corrected PPM: 52.20 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 189.09  Corrected RZero: 181.84  Resistance: 117.87  PPM: 40.98  Corrected PPM: 35.22 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 186.53  Corrected RZero: 184.31  Resistance: 116.30  PPM: 35.39  Corrected PPM: 37.97 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 189.09  Corrected RZero: 184.31  Resistance: 117.87  PPM: 35.39  Corrected PPM: 40.86 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 164.05  Corrected RZero: 164.09  Resistance: 111.79  PPM: 42.47  Corrected PPM: 39.40 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 176.89  Corrected RZero: 181.84  Resistance: 110.35  PPM: 36.73  Corrected PPM: 40.86 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 174.63  Corrected RZero: 181.84  Resistance: 113.25  PPM: 36.73  Corrected PPM: 40.86 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 174.63  Corrected RZero: 164.09  Resistance: 110.35  PPM: 50.50  Corrected PPM: 43.91 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 170.25  Corrected RZero: 170.36  Resistance: 106.25  PPM: 47.17  Corrected PPM: 45.49 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 176.89  Corrected RZero: 186.84  Resistance: 117.87  PPM: 42.47  Corrected PPM: 48.76 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 184.03  Corrected RZero: 186.84  Resistance: 116.30  PPM: 34.07  Corrected PPM: 37.97 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 189.09  Corrected RZero: 177.08  Resistance: 119.49  PPM: 39.53  Corrected PPM: 35.22 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 186.53  Corrected RZero: 184.31  Resistance: 117.87  PPM: 34.07  Corrected PPM: 37.97 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 184.03  Corrected RZero: 174.79  Resistance: 116.30  PPM: 39.53  Corrected PPM: 42.37 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 189.09  Corrected RZero: 177.08  Resistance: 119.49  PPM: 38.11  Corrected PPM: 35.22 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 168.13  Corrected RZero: 172.55  Resistance: 110.35  PPM: 47.17  Corrected PPM: 42.37 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 168.13  Corrected RZero: 170.36  Resistance: 108.95  PPM: 47.17  Corrected PPM: 47.11 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 186.53  Corrected RZero: 181.84  Resistance: 110.35  PPM: 45.57  Corrected PPM: 47.11 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 186.53  Corrected RZero: 181.84  Resistance: 116.30  PPM: 36.73  Corrected PPM: 37.97 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 184.03  Corrected RZero: 181.84  Resistance: 117.87  PPM: 36.73  Corrected PPM: 37.97 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 184.03  Corrected RZero: 184.31  Resistance: 117.87  PPM: 36.73  Corrected PPM: 40.86 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 176.89  Corrected RZero: 177.08  Resistance: 108.95  PPM: 39.53  Corrected PPM: 42.37 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 174.63  Corrected RZero: 172.55  Resistance: 113.25  PPM: 42.47  Corrected PPM: 43.91 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 186.53  Corrected RZero: 184.31  Resistance: 117.87  PPM: 38.11  Corrected PPM: 36.58 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 179.22  Corrected RZero: 174.79  Resistance: 108.95  PPM: 42.47  Corrected PPM: 35.22 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 172.41  Corrected RZero: 170.36  Resistance: 108.95  PPM: 42.47  Corrected PPM: 35.22 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 184.03  Corrected RZero: 184.31  Resistance: 116.30  PPM: 36.73  Corrected PPM: 36.58 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 174.63  Corrected RZero: 186.84  Resistance: 119.49  PPM: 38.11  Corrected PPM: 36.58 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 179.22  Corrected RZero: 174.79  Resistance: 114.76  PPM: 40.98  Corrected PPM: 39.40 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 170.25  Corrected RZero: 179.43  Resistance: 110.35  PPM: 40.98  Corrected PPM: 45.49 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 174.63  Corrected RZero: 184.31  Resistance: 117.87  PPM: 35.39  Corrected PPM: 36.58 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 189.09  Corrected RZero: 189.44  Resistance: 119.49  PPM: 35.39  Corrected PPM: 33.90 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 179.22  Corrected RZero: 174.79  Resistance: 114.76  PPM: 39.53  Corrected PPM: 52.20 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 184.03  Corrected RZero: 179.43  Resistance: 117.87  PPM: 36.73  Corrected PPM: 37.97 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 179.22  Corrected RZero: 174.79  Resistance: 111.79  PPM: 40.98  Corrected PPM: 42.37 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 181.60  Corrected RZero: 184.31  Resistance: 116.30  PPM: 36.73  Corrected PPM: 37.97 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 186.53  Corrected RZero: 184.31  Resistance: 117.87  PPM: 36.73  Corrected PPM: 39.40 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 179.22  Corrected RZero: 174.79  Resistance: 111.79  PPM: 39.53  Corrected PPM: 42.37 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 172.41  Corrected RZero: 177.08  Resistance: 111.79  PPM: 42.47  Corrected PPM: 40.86 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 184.03  Corrected RZero: 181.84  Resistance: 116.30  PPM: 36.73  Corrected PPM: 47.11 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 166.07  Corrected RZero: 162.09  Resistance: 107.59  PPM: 48.82  Corrected PPM: 48.76 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 172.41  Corrected RZero: 168.22  Resistance: 106.25  PPM: 42.47  Corrected PPM: 47.11 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 184.03  Corrected RZero: 181.84  Resistance: 113.25  PPM: 35.39  Corrected PPM: 37.97 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 170.25  Corrected RZero: 166.13  Resistance: 108.95  PPM: 44.00  Corrected PPM: 45.49 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 166.07  Corrected RZero: 172.55  Resistance: 108.95  PPM: 44.00  Corrected PPM: 43.91 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 184.03  Corrected RZero: 179.43  Resistance: 119.49  PPM: 36.73  Corrected PPM: 39.40 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 186.53  Corrected RZero: 184.31  Resistance: 116.30  PPM: 34.07  Corrected PPM: 36.58 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 176.89  Corrected RZero: 177.08  Resistance: 113.25  PPM: 38.11  Corrected PPM: 42.37 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 186.53  Corrected RZero: 181.84  Resistance: 116.30  PPM: 38.11  Corrected PPM: 36.58 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 179.22  Corrected RZero: 177.08  Resistance: 102.42  PPM: 48.82  Corrected PPM: 50.46 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 184.03  Corrected RZero: 181.84  Resistance: 117.87  PPM: 36.73  Corrected PPM: 37.97 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 179.22  Corrected RZero: 177.08  Resistance: 111.79  PPM: 40.98  Corrected PPM: 39.40 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 189.09  Corrected RZero: 184.31  Resistance: 116.30  PPM: 36.73  Corrected PPM: 39.40 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 179.22  Corrected RZero: 181.84  Resistance: 116.30  PPM: 38.11  Corrected PPM: 43.91 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 186.53  Corrected RZero: 184.31  Resistance: 116.30  PPM: 35.39  Corrected PPM: 36.58 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 186.53  Corrected RZero: 181.84  Resistance: 106.25  PPM: 50.50  Corrected PPM: 43.91 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 166.07  Corrected RZero: 164.09  Resistance: 107.59  PPM: 48.82  Corrected PPM: 52.20 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 172.41  Corrected RZero: 172.55  Resistance: 106.25  PPM: 40.98  Corrected PPM: 43.91 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 172.41  Corrected RZero: 168.22  Resistance: 110.35  PPM: 45.57  Corrected PPM: 48.76 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 186.53  Corrected RZero: 181.84  Resistance: 116.30  PPM: 36.73  Corrected PPM: 37.97 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 166.07  Corrected RZero: 164.09  Resistance: 102.42  PPM: 47.17  Corrected PPM: 47.11 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 184.03  Corrected RZero: 184.31  Resistance: 117.87  PPM: 36.73  Corrected PPM: 37.97 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 179.22  Corrected RZero: 170.36  Resistance: 107.59  PPM: 42.47  Corrected PPM: 42.37 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 176.89  Corrected RZero: 172.55  Resistance: 111.79  PPM: 40.98  Corrected PPM: 47.11 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 174.63  Corrected RZero: 170.36  Resistance: 110.35  PPM: 44.00  Corrected PPM: 48.76 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 170.25  Corrected RZero: 166.13  Resistance: 104.94  PPM: 45.57  Corrected PPM: 52.20 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 181.60  Corrected RZero: 177.08  Resistance: 104.94  PPM: 48.82  Corrected PPM: 47.11 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 176.89  Corrected RZero: 174.79  Resistance: 110.35  PPM: 45.57  Corrected PPM: 40.86 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 186.53  Corrected RZero: 181.84  Resistance: 114.76  PPM: 35.39  Corrected PPM: 36.58 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 189.09  Corrected RZero: 184.31  Resistance: 116.30  PPM: 38.11  Corrected PPM: 36.58 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 186.53  Corrected RZero: 184.31  Resistance: 117.87  PPM: 35.39  Corrected PPM: 36.58 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 189.09  Corrected RZero: 184.31  Resistance: 117.87  PPM: 38.11  Corrected PPM: 36.58 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 189.09  Corrected RZero: 184.31  Resistance: 117.87  PPM: 34.07  Corrected PPM: 36.58 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 184.03  Corrected RZero: 186.84  Resistance: 117.87  PPM: 38.11  Corrected PPM: 35.22 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 189.09  Corrected RZero: 184.31  Resistance: 116.30  PPM: 34.07  Corrected PPM: 36.58 ppm
+GPS: Location: 52.372050, 4.948218  Date: 12/8/2023
+MQ135: RZero: 186.53  Corrected RZero: 184.31  Resistance: 117.87  PPM: 35.39  Corrected PPM: 39.40 ppm
