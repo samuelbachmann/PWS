@@ -1,0 +1,18 @@
+MQ135: RZero: 154.58  Corrected RZero: 145.94  Resistance: 96.56  PPM: 61.47  Corrected PPM: 78.85 ppm
+GPS: Location: INVALID  Date: 0/0/2000
+MQ135: RZero: 144.46  Corrected RZero: 142.74  Resistance: 90.29  PPM: 78.59  Corrected PPM: 72.01 ppm
+GPS: Location: INVALID  Date: 0/0/2000
+MQ135: RZero: 116.87  Corrected RZero: 113.36  Resistance: 72.50  PPM: 132.51  Corrected PPM: 140.52 ppm
+GPS: Location: INVALID  Date: 0/0/2000
+MQ135: RZero: 109.67  Corrected RZero: 108.36  Resistance: 69.30  PPM: 157.84  Corrected PPM: 175.43 ppm
+GPS: Location: INVALID  Date: 0/0/2000
+MQ135: RZero: 112.66  Corrected RZero: 105.54  Resistance: 64.13  PPM: 165.68  Corrected PPM: 175.43 ppm
+GPS: Location: INVALID  Date: 0/0/2000
+MQ135: RZero: 106.82  Corrected RZero: 101.98  Resistance: 68.09  PPM: 165.68  Corrected PPM: 171.27 ppm
+GPS: Location: INVALID  Date: 0/0/2000
+MQ135: RZero: 126.18  Corrected RZero: 125.92  Resistance: 79.74  PPM: 104.45  Corrected PPM: 110.95 ppm
+GPS: Location: INVALID  Date: 0/0/2000
+MQ135: RZero: 116.87  Corrected RZero: 116.56  Resistance: 74.55  PPM: 129.15  Corrected PPM: 167.18 ppm
+GPS: Location: INVALID  Date: 0/0/2000
+MQ135: RZero: 127.44  Corrected RZero: 125.92  Resistance: 78.96  PPM: 98.85  Corrected PPM: 105.05 ppm
+GPS: Location: INVALID  Date: 0/0/2000
