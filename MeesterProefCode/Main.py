@@ -1,28 +1,50 @@
-import re
-import folium
+import gpxpy
+import gpxpy.gpx
+from datetime import datetime
 
-# Read data from the file
-with open('data.txt', 'r') as file:
-    data = file.readlines()
+filePath = 'C:/Users/samue/Documents/GitHub/PWS/MeesterProefCode/data.txt'
 
-# Extract GPS values from the data
-gps_pattern = r'GPS: (\d+\.\d+), (\d+\.\d+)'
-gps_data = []
-for line in data:
-    match = re.search(gps_pattern, line)
-    if match:
-        latitude = float(match.group(1))
-        longitude = float(match.group(2))
-        gps_data.append((latitude, longitude))
+def main():
+    with open(filePath) as file:
+        data = file.read()
 
-# Create a map using Folium
-mymap = folium.Map(location=gps_data[0], zoom_start=12)
+    sortValues(data)
 
-# Plot GPS points on the map
-for point in gps_data:
-    folium.Marker(point).add_to(mymap)
+def sortValues(data):
+    lines = data.strip().split('\n')
 
-# Save the map to an HTML file
-mymap.save('gps_map.html')
+    result = {}
+    current_gps = None
 
-# pip install matplotlib folium
+    for item in lines:
+        key, value = item.split(':')
+        if key == 'GPS':
+            current_gps = value
+        elif key == 'MQ135' and current_gps:
+            result[current_gps] = value.split(',')
+
+def createGPXTrack():
+    gpx = gpxpy.gpx.GPX()
+
+    track = gpxpy.gpx.GPXTrack()
+    gpx.tracks.append(track)
+
+    # Create a track segment
+    segment = gpxpy.gpx.GPXTrackSegment()
+    track.segments.append(segment)
+
+    # Create track points with datetime objects
+    time_format = "%Y-%m-%dT%H:%M:%SZ"
+    time1 = datetime.strptime("2023-12-09T12:00:00Z", time_format)
+    point1 = gpxpy.gpx.GPXTrackPoint(latitude=42.1234, longitude=-71.5678, time=time1)
+    segment.points.append(point1)
+
+    time2 = datetime.strptime("2023-12-09T12:05:00Z", time_format)
+    point2 = gpxpy.gpx.GPXTrackPoint(latitude=42.2345, longitude=-71.6789, time=time2)
+    segment.points.append(point2)
+
+def saveGPXFile(gpx):
+    with open("new_file.gpx", "w") as file:
+        file.write(gpx.to_xml())   
+
+main()
