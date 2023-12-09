@@ -8,7 +8,7 @@
 #define RX_PIN 0
 #define TX_PIN 1
 #define GPS_BAUD 9600
-#define DELAY_INTERVAL 1000
+#define DELAY_INTERVAL 5000
 #define GPS_PROCESS_THRESHOLD 10
 #define GPS_WAIT_TIME 5000
 
@@ -29,31 +29,25 @@ void setup() {
 
   if (!card.init(SPI_HALF_SPEED, chipSelect)) {
     Serial.println("initialization failed!");
-    digitalWrite(ledPin, HIGH);
-    return;
+    while (1); // Hang in case of SD card initialization failure
   }
   Serial.println("initialization done.");
 
+  if (!SD.begin(chipSelect)) {
+    Serial.println("SD initialization failed!");
+    while (1); // Hang in case of SD library initialization failure
+  }
   SD.remove("data.txt");
 
   ss.begin(GPS_BAUD);
 }
 
 void loop() {
-
-  digitalWrite(ledPin, HIGH);   
-  delay(1000);                  
-  digitalWrite(ledPin, LOW);    
-  delay(1000); 
-
-  readMQ135();
   readGPS();
+  if (gps.location.isValid()) {
+    readMQ135();
+  }
   delay(DELAY_INTERVAL); 
-}
-
-void readSensors() {
-  readMQ135();
-  readGPS();
 }
 
 void readMQ135() {
@@ -68,20 +62,23 @@ void readMQ135() {
 
 void printMQ135Data(float rzero, float correctedRZero, float resistance, float ppm, float correctedPPM) {
   myFile = SD.open("data.txt", FILE_WRITE);
-
-  myFile.print("MQ135: RZero: ");
-  myFile.print(rzero);
-  myFile.print("  Corrected RZero: ");
-  myFile.print(correctedRZero);
-  myFile.print("  Resistance: ");
-  myFile.print(resistance);
-  myFile.print("  PPM: ");
-  myFile.print(ppm);
-  myFile.print("  Corrected PPM: ");
-  myFile.print(correctedPPM);
-  myFile.println(" ppm");
-
-  myFile.close();
+  if (myFile) {
+    myFile.print("MQ135:");
+    myFile.print(rzero);
+    myFile.print(",");
+    myFile.print(correctedRZero);
+    myFile.print(",");
+    myFile.print(resistance);
+    myFile.print(",");
+    myFile.print(ppm);
+    myFile.print(",");
+    myFile.print(correctedPPM);
+    myFile.println("");
+  
+    myFile.close();
+  } else {
+    Serial.println("Error opening data.txt");
+  }
 
   Serial.print("MQ135: RZero: ");
   Serial.print(rzero);
@@ -94,7 +91,6 @@ void printMQ135Data(float rzero, float correctedRZero, float resistance, float p
   Serial.print("  Corrected PPM: ");
   Serial.print(correctedPPM);
   Serial.println(" ppm");
-
 }
 
 void readGPS() {
@@ -113,38 +109,46 @@ void readGPS() {
 
 void printGPSData() {
   myFile = SD.open("data.txt", FILE_WRITE);
-
-  myFile.print("GPS: Location: ");
-  if (gps.location.isValid()) {
-    myFile.print(gps.location.lat(), 6);
-    myFile.print(", ");
-    myFile.print(gps.location.lng(), 6);
+  if (myFile) {
+    myFile.print("GPS:");
+    if (gps.location.isValid()) {
+      myFile.print(gps.location.lat(), 6);
+      myFile.print(",");
+      myFile.println(gps.location.lng(), 6);
+    } else {
+      myFile.println("INVALID");
+    }
+  
+    myFile.print("Date:");
+    if (gps.date.isValid()) {
+      myFile.print(gps.date.month());
+      myFile.print("-");
+      myFile.print(gps.date.day());
+      myFile.print("-");
+      myFile.print(gps.date.year());
+      myFile.print("T");
+      myFile.print(gps.time.hour());
+      myFile.print(":");
+      myFile.print(gps.time.minute());
+      myFile.print(":");
+      myFile.print(gps.time.second());
+    } else {
+      myFile.print("INVALID");
+    }
+  
+    myFile.println();
+    myFile.close();
   } else {
-    myFile.print("INVALID");
+    Serial.println("Error opening data.txt");
   }
 
-  myFile.print("  Date: ");
-  if (gps.date.isValid()) {
-    myFile.print(gps.date.month());
-    myFile.print("/");
-    myFile.print(gps.date.day());
-    myFile.print("/");
-    myFile.print(gps.date.year());
-  } else {
-    myFile.print("INVALID");
-  }
-
-  myFile.println();
-
-  myFile.close();
-
-  Serial.print("GPS: Location: ");
+  Serial.print("GPS: ");
   if (gps.location.isValid()) {
     Serial.print(gps.location.lat(), 6);
-    Serial.print(", ");
-    Serial.print(gps.location.lng(), 6);
+    Serial.print(",");
+    Serial.println(gps.location.lng(), 6);
   } else {
-    Serial.print("INVALID");
+    Serial.println("INVALID");
   }
 
   Serial.print("  Date: ");
@@ -155,8 +159,6 @@ void printGPSData() {
     Serial.print("-");
     Serial.print(gps.date.year());
     Serial.print("T");
-    
-    // Add hours, minutes, and seconds
     Serial.print(gps.time.hour());
     Serial.print(":");
     Serial.print(gps.time.minute());
