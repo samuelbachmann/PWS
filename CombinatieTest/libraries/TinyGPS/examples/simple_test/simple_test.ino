@@ -8,7 +8,7 @@
 */
 
 TinyGPS gps;
-SoftwareSerial ss(4, 3);
+SoftwareSerial ss(0, 1);
 
 void setup()
 {
