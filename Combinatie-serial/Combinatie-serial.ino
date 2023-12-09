@@ -150,10 +150,18 @@ void printGPSData() {
   Serial.print("  Date: ");
   if (gps.date.isValid()) {
     Serial.print(gps.date.month());
-    Serial.print("/");
+    Serial.print("-");
     Serial.print(gps.date.day());
-    Serial.print("/");
+    Serial.print("-");
     Serial.print(gps.date.year());
+    Serial.print("T");
+    
+    // Add hours, minutes, and seconds
+    Serial.print(gps.time.hour());
+    Serial.print(":");
+    Serial.print(gps.time.minute());
+    Serial.print(":");
+    Serial.print(gps.time.second());
   } else {
     Serial.print("INVALID");
   }
