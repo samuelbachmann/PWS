@@ -42,12 +42,13 @@ void setup() {
 void loop() {
 
   digitalWrite(ledPin, HIGH);   
-  delay(1000);                  
+  delay(2000);                  
   digitalWrite(ledPin, LOW);    
-  delay(1000); 
+  delay(2000); 
 
-  readMQ135();
   readGPS();
+  readMQ135();
+  
   delay(DELAY_INTERVAL); 
 }
 
@@ -69,17 +70,17 @@ void readMQ135() {
 void printMQ135Data(float rzero, float correctedRZero, float resistance, float ppm, float correctedPPM) {
   myFile = SD.open("data.txt", FILE_WRITE);
 
-  myFile.print("MQ135: RZero: ");
+  myFile.print("MQ135:");
   myFile.print(rzero);
-  myFile.print("  Corrected RZero: ");
+  myFile.print(",");
   myFile.print(correctedRZero);
-  myFile.print("  Resistance: ");
+  myFile.print(",");
   myFile.print(resistance);
-  myFile.print("  PPM: ");
+  myFile.print(",");
   myFile.print(ppm);
-  myFile.print("  Corrected PPM: ");
+  myFile.print(",");
   myFile.print(correctedPPM);
-  myFile.println(" ppm");
+  myFile.println();
 
   myFile.close();
 
@@ -114,40 +115,47 @@ void readGPS() {
 void printGPSData() {
   myFile = SD.open("data.txt", FILE_WRITE);
 
-  myFile.print("GPS: Location: ");
+    myFile.print("GPS:");
   if (gps.location.isValid()) {
     myFile.print(gps.location.lat(), 6);
-    myFile.print(", ");
-    myFile.print(gps.location.lng(), 6);
+    myFile.print(",");
+    myFile.println(gps.location.lng(), 6);
   } else {
-    myFile.print("INVALID");
+    myFile.println("INVALID");
   }
 
-  myFile.print("  Date: ");
+  myFile.print("Date:");
   if (gps.date.isValid()) {
     myFile.print(gps.date.month());
-    myFile.print("/");
+    myFile.print("-");
     myFile.print(gps.date.day());
-    myFile.print("/");
+    myFile.print("-");
     myFile.print(gps.date.year());
+    myFile.print("T");
+    
+    // Add hours, minutes, and seconds
+    myFile.print(gps.time.hour());
+    myFile.print(":");
+    myFile.print(gps.time.minute());
+    myFile.print(":");
+    myFile.print(gps.time.second());
   } else {
     myFile.print("INVALID");
   }
 
   myFile.println();
-
   myFile.close();
 
-  Serial.print("GPS: Location: ");
+  Serial.print("GPS:");
   if (gps.location.isValid()) {
     Serial.print(gps.location.lat(), 6);
-    Serial.print(", ");
-    Serial.print(gps.location.lng(), 6);
+    Serial.print(",");
+    Serial.println(gps.location.lng(), 6);
   } else {
-    Serial.print("INVALID");
+    Serial.println("INVALID");
   }
 
-  Serial.print("  Date: ");
+  Serial.print("Date:");
   if (gps.date.isValid()) {
     Serial.print(gps.date.month());
     Serial.print("-");
@@ -155,8 +163,6 @@ void printGPSData() {
     Serial.print("-");
     Serial.print(gps.date.year());
     Serial.print("T");
-    
-    // Add hours, minutes, and seconds
     Serial.print(gps.time.hour());
     Serial.print(":");
     Serial.print(gps.time.minute());
