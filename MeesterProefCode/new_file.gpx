@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
-  <wpt lat="42.1234" lon="-71.5678">
-    <name>MyWaypoint</name>
-    <desc>This is a custom waypoint</desc>
-  </wpt>
   <trk>
     <trkseg>
-      <trkpt lat="42.1234" lon="-71.5678">
-        <time>2023-12-09T12:00:00</time>
+      <trkpt lat="52.372050" lon="4.948218">
+        <time>2023-09-12T01:07:00</time>
       </trkpt>
-      <trkpt lat="42.2345" lon="-71.6789">
-        <time>2023-12-09T12:05:00</time>
+      <trkpt lat="52.372050" lon="3.948217">
+        <time>2023-09-12T01:07:05</time>
+      </trkpt>
+      <trkpt lat="51.372050" lon="3.9482">
+        <time>2023-09-12T01:07:10</time>
+      </trkpt>
+      <trkpt lat="51.372050" lon="2.94821">
+        <time>2023-09-12T01:07:15</time>
+      </trkpt>
+      <trkpt lat="50.372050" lon="2.948216">
+        <time>2023-09-12T01:07:20</time>
       </trkpt>
     </trkseg>
   </trk>

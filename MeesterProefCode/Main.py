@@ -16,14 +16,17 @@ def sortValues(data):
     result = {}
     current_gps = None
 
-    for item in lines:
-        key, value = item.split(':')
+    for line in lines:
+        key, value = line.split(':', 1)
         if key == 'GPS':
-            current_gps = value
-        elif key == 'MQ135' and current_gps:
-            result[current_gps] = value.split(',')
+            current_key = value
+            result[current_key] = {}
+        else:
+            result[current_key][key] = value
 
-def createGPXTrack():
+    createGPXTrack(result)
+
+def createGPXTrack(result):
     gpx = gpxpy.gpx.GPX()
 
     track = gpxpy.gpx.GPXTrack()
@@ -33,15 +36,20 @@ def createGPXTrack():
     segment = gpxpy.gpx.GPXTrackSegment()
     track.segments.append(segment)
 
-    # Create track points with datetime objects
-    time_format = "%Y-%m-%dT%H:%M:%SZ"
-    time1 = datetime.strptime("2023-12-09T12:00:00Z", time_format)
-    point1 = gpxpy.gpx.GPXTrackPoint(latitude=42.1234, longitude=-71.5678, time=time1)
-    segment.points.append(point1)
+    for key, value in result.items():
+        segment.points.append(createTrackPoints(key, value['Date']))
 
-    time2 = datetime.strptime("2023-12-09T12:05:00Z", time_format)
-    point2 = gpxpy.gpx.GPXTrackPoint(latitude=42.2345, longitude=-71.6789, time=time2)
-    segment.points.append(point2)
+    saveGPXFile(gpx)
+
+def createTrackPoints(key, date):
+    time_format = '%d-%m-%YT%H:%M:%SZ'
+
+    latitude, longitude = key.split(",")
+
+    dateValue = datetime.strptime(date, time_format)
+    point = gpxpy.gpx.GPXTrackPoint(latitude=latitude, longitude=longitude, time=dateValue)
+    
+    return point
 
 def saveGPXFile(gpx):
     with open("new_file.gpx", "w") as file:
