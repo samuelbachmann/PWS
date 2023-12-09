@@ -10,7 +10,7 @@
 #define GPS_BAUD 9600
 #define DELAY_INTERVAL 5000
 #define GPS_PROCESS_THRESHOLD 10
-#define GPS_WAIT_TIME 5000
+#define GPS_WAIT_TIME 2500
 
 MQ135 mq135_sensor(PIN_MQ135);
 TinyGPSPlus gps;
@@ -151,7 +151,7 @@ void printGPSData() {
     Serial.println("INVALID");
   }
 
-  Serial.print("  Date: ");
+  Serial.print("Date: ");
   if (gps.date.isValid()) {
     Serial.print(gps.date.month());
     Serial.print("-");
