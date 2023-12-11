@@ -25,11 +25,9 @@ def convert_file():
         data = uploaded_file.read().decode("utf-8")
         result = sort_values(data)
         gpx = create_gpx_track(result)
-        gpx_data = gpx.to_xml()
-        return send_file(gpx_data, as_attachment=True, attachment_filename='converted.gpx', mimetype='application/gpx+xml')
+        return send_file(gpx.to_xml(), as_attachment=True, mimetype='application/gpx+xml')
 
     return 'No file uploaded'
-
 def sort_values(data):
     lines = data.strip().split('\n')
 
