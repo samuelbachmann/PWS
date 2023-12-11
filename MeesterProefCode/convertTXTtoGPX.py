@@ -8,7 +8,6 @@ def processUploadedData(data):
     return gpx
 
 def sortValues(data):
-    print(data)
     lines = data.strip().replace('\r', '').split('\n')
 
     result = {}
