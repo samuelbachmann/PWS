@@ -21,7 +21,7 @@ File myFile;
 
 const int chipSelect = BUILTIN_SDCARD;
 const int ledPin = 13;
-const float TEMPERATURE = 21.0;
+const float TEMPERATURE = 18.0;
 const float HUMIDITY = 25.0;
 
 void setup() {
