@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, Response
-from convertTXTtoGPX import processUploadedData, saveGPXFile
-from io import BytesIO
+from convertTXTtoGPX import processUploadedData
 
 app = Flask(__name__)
 
@@ -10,9 +9,9 @@ def home():
 
 @app.route('/convert', methods=['POST'])
 def convert():
-    uploaded_file = request.files['file']
-    if uploaded_file.filename != '':
-        file_data = uploaded_file.read().decode('utf-8')  # Extract text data
+    uploadedFile = request.files['file']
+    if uploadedFile.filename != '':
+        file_data = uploadedFile.read().decode('utf-8')  # Extract text data
         gpx = processUploadedData(file_data)
         gpx_xml = gpx.to_xml()  # Convert GPX object to XML
 
@@ -23,7 +22,6 @@ def convert():
         )
     else:
         return "No file uploaded."
-
 
 if __name__ == '__main__':
     app.run(debug=True)

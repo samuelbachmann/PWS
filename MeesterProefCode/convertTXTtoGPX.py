@@ -11,7 +11,6 @@ def sortValues(data):
     lines = data.strip().replace('\r', '').split('\n')
 
     result = {}
-    current_gps = None
 
     for line in lines:
         key, value = line.split(':', 1)
@@ -25,7 +24,6 @@ def sortValues(data):
 
 def createGPXTrack(result):
     gpx = gpxpy.gpx.GPX()
-    i = 0
 
     track = gpxpy.gpx.GPXTrack()
     gpx.tracks.append(track)
@@ -34,7 +32,6 @@ def createGPXTrack(result):
 
     for key, value in result.items():
         segment.points.append(createTrackPoints(key, value['Date']))
-        i += 1 
 
     return gpx
 
@@ -48,8 +45,8 @@ def createTrackPoints(key, date):
     
     return point
 
-def saveGPXFile(gpx, file_name='GPSData.gpx'):
-    with open(file_name, "w") as file:  # Open the file in write text mode
-        file.write(gpx.to_xml())  # Write the GPX data to the file
+def saveGPXFile(gpx, fileName='GPSData.gpx'):
+    with open(fileName, "w") as file:
+        file.write(gpx.to_xml())
 
-    return file_name
+    return fileName
