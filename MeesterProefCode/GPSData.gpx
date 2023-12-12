@@ -4,18 +4,43 @@
     <trkseg>
       <trkpt lat="52.372050" lon="4.948218">
         <time>2023-12-09T01:07:00</time>
+        <extensions>
+          <customData>
+            <mq135> '189.09,194.83,116.30,31.55,33.90'</mq135>
+          </customData>
+        </extensions>
       </trkpt>
       <trkpt lat="52.372050" lon="3.948217">
         <time>2023-12-09T01:07:05</time>
+        <extensions>
+          <customData>
+            <mq135> '189.09,194.83,116.30,31.55,33.90'</mq135>
+          </customData>
+        </extensions>
       </trkpt>
       <trkpt lat="51.372050" lon="3.9482">
         <time>2023-12-09T01:07:10</time>
+        <extensions>
+          <customData>
+            <mq135> '189.09,194.83,116.30,31.55,33.90'</mq135>
+          </customData>
+        </extensions>
       </trkpt>
       <trkpt lat="51.372050" lon="2.94821">
         <time>2023-12-09T01:07:15</time>
+        <extensions>
+          <customData>
+            <mq135> '189.09,194.83,116.30,31.55,33.90'</mq135>
+          </customData>
+        </extensions>
       </trkpt>
       <trkpt lat="50.372050" lon="2.948216">
         <time>2023-12-09T01:07:20</time>
+        <extensions>
+          <customData>
+            <mq135> '189.09,194.83,116.30,31.55,33.90'</mq135>
+          </customData>
+        </extensions>
       </trkpt>
     </trkseg>
   </trk>
