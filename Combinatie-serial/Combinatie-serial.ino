@@ -108,7 +108,7 @@ void printGPSData() {
     myFile.print(gps.location.lng(), 6);
   } else {
     myFile.print("INVALID"); 
-
+  }
   myFile.print("\nDate:");
   if (gps.date.isValid()) {
     myFile.print(gps.date.month());
