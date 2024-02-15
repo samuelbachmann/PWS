@@ -1,0 +1,108 @@
+diff all
+
+# version
+# INAV/MATEKF411TE 5.1.0 Jan 28 2023 / 16:15:33 (b09b138f)
+# GCC-10.2.1 20201103 (release)
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults noreboot
+
+# resources
+
+# mixer
+
+# servo mixer
+
+# servo
+
+# safehome
+
+# feature
+
+# beeper
+
+# blackbox
+blackbox -NAV_ACC
+blackbox NAV_POS
+blackbox NAV_PID
+blackbox MAG
+blackbox ACC
+blackbox ATTI
+blackbox RC_DATA
+blackbox RC_COMMAND
+blackbox MOTORS
+
+# map
+
+# serial
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+
+# adjrange
+
+# rxrange
+
+# temp_sensor
+
+# wp
+#wp 0 invalid
+
+# osd_layout
+
+# logic
+
+# global vars
+
+# programmable pid controllers
+
+# master
+set gyro_zero_x = -15
+set gyro_zero_y = 1
+set gyro_zero_z = -2
+set ins_gravity_cmss =  982.754
+set acc_hardware = ICM42605
+set align_mag = CW270FLIP
+set mag_hardware = NONE
+set baro_hardware = SPL06
+
+# profile
+profile 1
+
+
+# profile
+profile 2
+
+
+# profile
+profile 3
+
+
+# battery_profile
+battery_profile 1
+
+
+# battery_profile
+battery_profile 2
+
+
+# battery_profile
+battery_profile 3
+
+
+# restore original profile selection
+profile 1
+battery_profile 1
+
+# save configuration
+save
+
+# 

@@ -5,8 +5,8 @@
 #include <SPI.h>
 
 #define PIN_MQ135 A2
-#define RX_PIN 0
-#define TX_PIN 1
+#define RX_PIN 14
+#define TX_PIN 15
 #define GPS_BAUD 9600
 #define DELAY_INTERVAL 1000
 #define GPS_PROCESS_THRESHOLD 10
